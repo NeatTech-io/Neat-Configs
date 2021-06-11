@@ -1,4 +1,4 @@
-ESLint is a tool for identifying and reporting on patterns found in ECMAScript/JavaScript code
+ESLint is a tool for identifying and reporting on patterns found in code
 
 ## Installation
 
