@@ -11,5 +11,5 @@ yarn add @neat-tech/configs
 .eslintrc.yml
 
 ```
-extends: './node-modules/@neat-tech/configs/.eslintrc.yml'
+extends: './node_modules/@neat-tech/configs/dist/.eslintrc.yml'
 ```
