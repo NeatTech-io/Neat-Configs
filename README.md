@@ -5,3 +5,11 @@ ESLint is a tool for identifying and reporting on patterns found in ECMAScript/J
 ```bash
 yarn add @neat-tech/configs
 ```
+
+## Usage
+
+.eslintrc.yml
+
+```
+extends: './node-modules/@neat-tech/configs/.eslintrc.yml'
+```
