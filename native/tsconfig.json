@@ -1,6 +1,6 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
-  "display": "neion config",
+  "display": "config",
   "compilerOptions": {
     "target": "esnext",
     "noImplicitAny": false,
