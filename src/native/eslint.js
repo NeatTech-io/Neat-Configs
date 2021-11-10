@@ -5,8 +5,11 @@ module.exports = {
     'jest/globals': true,
   },
   "extends": [
-    "plugin:react/recommended",
-    "airbnb"
+    'plugin:react/recommended',
+    'plugin:react-hooks/recommended',
+    'plugin:@typescript-eslint/recommended',
+    'airbnb',
+    'plugin:import/typescript'
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
@@ -20,6 +23,16 @@ module.exports = {
     "react",
     "@typescript-eslint"
   ],
+  settings: {
+    'react': {
+      version: 'detect',
+    },
+    'import/resolver': {
+      node: {
+        paths: ['src'],
+      },
+    },
+  },
   overrides: [
     {
       files: ["*.js", "*.jsx"],
@@ -43,4 +56,24 @@ module.exports = {
       },
     },
   ],
+  rules: {
+    'indent': ['error', 2],
+    '@typescript-eslint/no-explicit-any': ['error'],
+    '@typescript-eslint/no-use-before-define': ['off'],
+    'react/jsx-sort-props': ['error', { shorthandFirst: true, callbacksLast: true }],
+    'max-len': [
+      'warn',
+      {
+        code: 90,
+        ignoreComments: true,
+        ignoreTrailingComments: true,
+        ignoreUrls: true,
+        ignoreStrings: true,
+        ignoreTemplateLiterals: true,
+        ignoreRegExpLiterals: true,
+      },
+    ],
+    'no-console': ['warn'],
+    // 'jsx-quotes': ['error', 'prefer-single'],
+  }
 }
