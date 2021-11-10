@@ -18,8 +18,11 @@ module.exports = {
     'react/display-name': ['off'],
     'react/no-children-prop': ['off'],
     'react/jsx-sort-props': ['error', { shorthandFirst: true, callbacksLast: true }],
+    'react/jsx-filename-extension': [2, { 'extensions': ['.js', '.jsx', '.ts', '.tsx'] }]
   },
   'common': {
+    'import/no-extraneous-dependencies': ['off'],
+    'import/no-unused-modules': ['off'],
     'import/no-cycle': ['warn'],
     'import/no-useless-path-segments': ['error'],
     'import/no-unused-modules': ['error'],
@@ -84,5 +87,6 @@ module.exports = {
     '@typescript-eslint/explicit-function-return-type': ['off'],
     '@typescript-eslint/no-empty-function': ['off'],
     '@typescript-eslint/no-use-before-define': ['off'],
+    'no-use-before-define': ['off'],
   }
 }
