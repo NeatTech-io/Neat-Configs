@@ -25,7 +25,7 @@ module.exports = {
     'import/no-unused-modules': ['off'],
     'import/no-cycle': ['warn'],
     'import/no-useless-path-segments': ['error'],
-    'import/no-unused-modules': ['error'],
+    // 'import/no-unused-modules': ['error'],
     'import/extensions': ['off'],
     'import/export': ['off'],
     'import/prefer-default-export': ['off'],
@@ -51,8 +51,10 @@ module.exports = {
     'import/export': ['off'],
     'import/prefer-default-export': ['off'],
     'import/no-unresolved': ['off'],
+    'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
+
     // ts
-    '@typescript-eslint/no-explicit-any': ['error'],
+    '@typescript-eslint/no-explicit-any': ['warn'],
     '@typescript-eslint/array-type': ['error', { default: "array-simple" }],
     '@typescript-eslint/ban-ts-comment': ['off'],
     '@typescript-eslint/ban-types': ['off'],
@@ -88,5 +90,8 @@ module.exports = {
     '@typescript-eslint/no-empty-function': ['off'],
     '@typescript-eslint/no-use-before-define': ['off'],
     'no-use-before-define': ['off'],
+    'no-unused-vars': ['off'],
+    'no-shadow': ['off'],
+    'semi': ["error", "always"],
   }
 }
