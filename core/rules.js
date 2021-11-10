@@ -1,5 +1,6 @@
 module.exports = {
   'fontend/native': {
+    'react/require-default-props': ['off'],
     'react/prop-types': ['off'],
     'react/no-set-state': ['off'],
     'react/no-array-index-key': ['warn'],
@@ -28,11 +29,12 @@ module.exports = {
     'import/extensions': ['off'],
     'import/export': ['off'],
     'import/prefer-default-export': ['off'],
-    'indent': ['error', 2],
+    'indent': ['off'],
+    'no-undef': ['off'],
     'max-len': [
       'warn',
       {
-        code: 90,
+        code: 80,
         ignoreComments: true,
         ignoreTrailingComments: true,
         ignoreUrls: true,
