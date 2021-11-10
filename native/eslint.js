@@ -9,7 +9,8 @@ module.exports = {
     es2021: true,
   },
   "extends": [
-    ...extendsOptions,
+    ...extendsOptions['fontend/native'],
+    ...extendsOptions['common'],
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
@@ -20,7 +21,8 @@ module.exports = {
     },
   },
   "plugins": [
-    ...plugins,
+    ...plugins['common'],
+    ...plugins['fontend/native'],
   ],
   settings: {
     'react': {
