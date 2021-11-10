@@ -14,7 +14,7 @@
     "url": "https://github.com/NeatTech-io/Neat-Configs/issues"
   },
   "homepage": "https://github.com/NeatTech-io/Neat-Configs#readme",
-  "devDependencies": {
+  "dependencies": {
     "@typescript-eslint/eslint-plugin": "^5.3.1",
     "@typescript-eslint/parser": "^5.3.1",
     "eslint": "^7.32.0",
